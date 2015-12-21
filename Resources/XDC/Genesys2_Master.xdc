@@ -35,11 +35,9 @@
 #set_property -dict { PACKAGE_PIN P26   IOSTANDARD LVCMOS33 } [get_ports { sw[6] }]; #IO_L10P_T1_D14_14 Sch=sw[6]
 #set_property -dict { PACKAGE_PIN P27   IOSTANDARD LVCMOS33 } [get_ports { sw[7] }]; #IO_L8P_T1_D11_14 Sch=sw[7]
 
-## USB HIDs
+## USB HIDs For Both Mouse and Keyboard
 #set_property -dict { PACKAGE_PIN AD23  IOSTANDARD LVCMOS33 } [get_ports { ps2_clk_0 }]; #IO_L12P_T1_MRCC_12 Sch=ps2_clk[0]
 #set_property -dict { PACKAGE_PIN AE20  IOSTANDARD LVCMOS33 } [get_ports { ps2_data_0 }]; #IO_25_12 Sch=ps2_data[0]
-#set_property -dict { PACKAGE_PIN AF25  IOSTANDARD LVCMOS33 } [get_ports { ps2_clk_1 }]; #IO_L16N_T2_12 Sch=ps2_clk[1]
-#set_property -dict { PACKAGE_PIN AE25  IOSTANDARD LVCMOS33 } [get_ports { ps2_data_1 }]; #IO_L16P_T2_12 Sch=ps2_data[1]
 
 ## UART
 #set_property -dict { PACKAGE_PIN Y23   IOSTANDARD LVCMOS33 } [get_ports { uart_rx_out }]; #IO_L1P_T0_12 Sch=uart_rx_out
