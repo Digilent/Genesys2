@@ -397,17 +397,17 @@
 #set_property -dict { PACKAGE_PIN AF30  IOSTANDARD LVCMOS33 } [get_ports { SYS_SDA }]; #IO_L16N_T2_13 Sch=sys_sda
 
 ## Display Port IN
-#set_property -dict { PACKAGE_PIN AC19  IOSTANDARD LVCMOS18 } [get_ports { RX_AUX_CH_N }]; #IO_L17N_T2_32 Sch=rx_aux_ch_n
-#set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS18 } [get_ports { RX_AUX_CH_N }]; #IO_L15N_T2_DQS_32 Sch=rx_aux_ch_n
-#set_property -dict { PACKAGE_PIN AB19  IOSTANDARD LVCMOS18 } [get_ports { RX_AUX_CH_P }]; #IO_L17P_T2_32 Sch=rx_aux_ch_p
-#set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS18 } [get_ports { RX_AUX_CH_P }]; #IO_L15P_T2_DQS_32 Sch=rx_aux_ch_p
+#set_property -dict { PACKAGE_PIN AC19  IOSTANDARD LVCMOS18 } [get_ports { RX_AUX_IN_CH_N }]; #IO_L17N_T2_32 Sch=rx_aux_ch_n
+#set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS18 } [get_ports { RX_AUX_OUT_CH_N }]; #IO_L15N_T2_DQS_32 Sch=rx_aux_ch_n
+#set_property -dict { PACKAGE_PIN AB19  IOSTANDARD LVCMOS18 } [get_ports { RX_AUX_IN_CH_P }]; #IO_L17P_T2_32 Sch=rx_aux_ch_p
+#set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS18 } [get_ports { RX_AUX_OUT_CH_P }]; #IO_L15P_T2_DQS_32 Sch=rx_aux_ch_p
 #set_property -dict { PACKAGE_PIN AE21  IOSTANDARD LVCMOS33 } [get_ports { RX_HPD }]; #IO_L10N_T1_12 Sch=rx_hpd
 
 ## Display Port OUT
-#set_property -dict { PACKAGE_PIN AD16  IOSTANDARD LVCMOS18 } [get_ports { TX_AUX_CH_N }]; #IO_L14N_T2_SRCC_32 Sch=tx_aux_ch_n
-#set_property -dict { PACKAGE_PIN AB18  IOSTANDARD LVCMOS18 } [get_ports { TX_AUX_CH_N }]; #IO_L16N_T2_32 Sch=tx_aux_ch_n
-#set_property -dict { PACKAGE_PIN AA18  IOSTANDARD LVCMOS18 } [get_ports { TX_AUX_CH_P }]; #IO_L16P_T2_32 Sch=tx_aux_ch_p
-#set_property -dict { PACKAGE_PIN AD17  IOSTANDARD LVCMOS18 } [get_ports { TX_AUX_CH_P }]; #IO_L14P_T2_SRCC_32 Sch=tx_aux_ch_p
+#set_property -dict { PACKAGE_PIN AD16  IOSTANDARD LVCMOS18 } [get_ports { TX_AUX_IN_CH_N }]; #IO_L14N_T2_SRCC_32 Sch=tx_aux_ch_n
+#set_property -dict { PACKAGE_PIN AB18  IOSTANDARD LVCMOS18 } [get_ports { TX_AUX_OUT_CH_N }]; #IO_L16N_T2_32 Sch=tx_aux_ch_n
+#set_property -dict { PACKAGE_PIN AA18  IOSTANDARD LVCMOS18 } [get_ports { TX_AUX_OUT_CH_P }]; #IO_L16P_T2_32 Sch=tx_aux_ch_p
+#set_property -dict { PACKAGE_PIN AD17  IOSTANDARD LVCMOS18 } [get_ports { TX_AUX_IN_CH_P }]; #IO_L14P_T2_SRCC_32 Sch=tx_aux_ch_p
 #set_property -dict { PACKAGE_PIN AD21  IOSTANDARD LVCMOS33 } [get_ports { TX_HPD }]; #IO_L10P_T1_12 Sch=tx_hpd
 
 ## USB
