@@ -367,12 +367,13 @@
 #set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports { FAN_PWM }]; #IO_25_14 Sch=fan_pwm
 #set_property -dict { PACKAGE_PIN V21   IOSTANDARD LVCMOS33 } [get_ports { FAN_TACH }]; #IO_L22P_T3_A05_D21_14 Sch=fan_tach
 
-## Programming
+## DPTI
+## Note: DPTI and DSPI constraints cannot be used in the same design, as they share pins.
 #set_property -dict { PACKAGE_PIN AB27  IOSTANDARD LVCMOS33 } [get_ports { PROG_CLKO }]; #IO_L12P_T1_MRCC_13 Sch=prog_clko
-#set_property -dict { PACKAGE_PIN AD27  IOSTANDARD LVCMOS33 } [get_ports { PROG_D0/SCK }]; #IO_L11P_T1_SRCC_13 Sch=prog_d0/sck
-#set_property -dict { PACKAGE_PIN W27   IOSTANDARD LVCMOS33 } [get_ports { PROG_D1/MOSI }]; #IO_L2P_T0_13 Sch=prog_d1/mosi
-#set_property -dict { PACKAGE_PIN W28   IOSTANDARD LVCMOS33 } [get_ports { PROG_D2/MISO }]; #IO_L2N_T0_13 Sch=prog_d2/miso
-#set_property -dict { PACKAGE_PIN W29   IOSTANDARD LVCMOS33 } [get_ports { PROG_D3/SS }]; #IO_L4P_T0_13 Sch=prog_d3/ss
+#set_property -dict { PACKAGE_PIN AD27  IOSTANDARD LVCMOS33 } [get_ports { PROG_D[0] }]; #IO_L11P_T1_SRCC_13 Sch=prog_d0/sck
+#set_property -dict { PACKAGE_PIN W27   IOSTANDARD LVCMOS33 } [get_ports { PROG_D[1] }]; #IO_L2P_T0_13 Sch=prog_d1/mosi
+#set_property -dict { PACKAGE_PIN W28   IOSTANDARD LVCMOS33 } [get_ports { PROG_D[2] }]; #IO_L2N_T0_13 Sch=prog_d2/miso
+#set_property -dict { PACKAGE_PIN W29   IOSTANDARD LVCMOS33 } [get_ports { PROG_D[3] }]; #IO_L4P_T0_13 Sch=prog_d3/ss
 #set_property -dict { PACKAGE_PIN Y29   IOSTANDARD LVCMOS33 } [get_ports { PROG_D[4] }]; #IO_L4N_T0_13 Sch=prog_d[4]
 #set_property -dict { PACKAGE_PIN Y28   IOSTANDARD LVCMOS33 } [get_ports { PROG_D[5] }]; #IO_L3P_T0_DQS_13 Sch=prog_d[5]
 #set_property -dict { PACKAGE_PIN AA28  IOSTANDARD LVCMOS33 } [get_ports { PROG_D[6] }]; #IO_L3N_T0_DQS_13 Sch=prog_d[6]
@@ -384,6 +385,14 @@
 #set_property -dict { PACKAGE_PIN AD29  IOSTANDARD LVCMOS33 } [get_ports { PROG_SPIEN }]; #IO_L9P_T1_DQS_13 Sch=prog_spien
 #set_property -dict { PACKAGE_PIN AA25  IOSTANDARD LVCMOS33 } [get_ports { PROG_TXEN }]; #IO_L6P_T0_13 Sch=prog_txen
 #set_property -dict { PACKAGE_PIN AC27  IOSTANDARD LVCMOS33 } [get_ports { PROG_WRN }]; #IO_L12N_T1_MRCC_13 Sch=prog_wrn
+
+## DSPI
+## Note: DPTI and DSPI constraints cannot be used in the same design, as they share pins.
+#set_property -dict { PACKAGE_PIN AD29  IOSTANDARD LVCMOS33 } [get_ports { PROG_SPIEN }]; #IO_L9P_T1_DQS_13 Sch=prog_spien
+#set_property -dict { PACKAGE_PIN AD27  IOSTANDARD LVCMOS33 } [get_ports { PROG_SCK }]; #IO_L11P_T1_SRCC_13 Sch=prog_d0/sck
+#set_property -dict { PACKAGE_PIN W27   IOSTANDARD LVCMOS33 } [get_ports { PROG_MOSI }]; #IO_L2P_T0_13 Sch=prog_d1/mosi
+#set_property -dict { PACKAGE_PIN W28   IOSTANDARD LVCMOS33 } [get_ports { PROG_MISO }]; #IO_L2N_T0_13 Sch=prog_d2/miso
+#set_property -dict { PACKAGE_PIN W29   IOSTANDARD LVCMOS33 } [get_ports { PROG_SS }]; #IO_L4P_T0_13 Sch=prog_d3/ss
 
 ## QSPI
 #set_property -dict { PACKAGE_PIN U19   IOSTANDARD LVCMOS33 } [get_ports { QSPI_CSN }]; #IO_L6P_T0_FCS_B_14 Sch=qspi_csn
