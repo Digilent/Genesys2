@@ -1,0 +1,1 @@
+write_cfgmem -force -format BIN -size 32 -interface SPIx4 -loaddata "up 0x1000000 Genesys2-DemoScreen-1-01.bin" g2_flash_img.bin

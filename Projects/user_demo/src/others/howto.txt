@@ -1,0 +1,9 @@
+The G2 demo needs a pixel dump (frame buffer binary) of the demo image to display it correctly.
+The VDMA expects 1920x1080 pixels sequentially, left-to-right, up-to-down, 24 bits per pixel, 8 bits per color, ordered Red, Blue, Green.
+Open the image in Gimp, choose Colors, Channel Mixer. Set the following mixer values:
+Output	R	G	B
+R	0	100	0
+G	0	0	100
+B	100	0	0
+Go to File, Export Image. Choose Raw image data under Select File Type, give it a name and save it with the default settings.
+

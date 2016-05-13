@@ -1,0 +1,3 @@
+# This file is automatically written.  Do not modify.
+proc gen_USERPARAMETER_INPUT_ONLY_CLK_ENABLEMENT {OUTPUT_ONLY_CLK } {expr !$OUTPUT_ONLY_CLK}
+proc gen_USERPARAMETER_INPUT_ONLY_CLK_VALUE {OUTPUT_ONLY_CLK } {expr $OUTPUT_ONLY_CLK == 0}
