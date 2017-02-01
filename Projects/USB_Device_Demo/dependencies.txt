@@ -1,0 +1,4 @@
+IP Core:
+    usb2device_v1_0
+
+
