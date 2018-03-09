@@ -20,8 +20,7 @@ set origin_dir ".."
 set orig_proj_dir "[file normalize "$origin_dir/proj"]"
 
 set src_dir $origin_dir/src
-#set repo_dir $origin_dir/../Git_USB_Device
-set repo_dir $origin_dir/repo
+set repo_dir $origin_dir/../../Resources/repo
 
 # Create project
 create_project $proj_name $dest_dir
